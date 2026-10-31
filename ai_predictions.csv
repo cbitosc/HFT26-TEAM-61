@@ -1,0 +1,26 @@
+image_path,class,class_id,confidence,x1,y1,x2,y2,injury_suspected,injury_note,is_blank,reason,edge_density,variance,n_conf_dets,event_key
+demo_images/WhatsApp Image 2026-10-30 at 23.58.16 (1).jpeg,dog,16,0.4009,23.39,94.65,251.6,193.23,False,,False,has_animal,0.1589,13.0406,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.16 (1).jpeg,cat,15,0.2754,26.19,101.53,76.45,157.15,False,,False,has_animal,0.1589,13.0406,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.16.jpeg,frisbee,29,0.5659,234.77,307.57,288.46,345.76,False,,False,has_animal,0.3212,5.8855,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.16.jpeg,dog,16,0.3642,290.24,160.96,422.95,334.91,False,,False,has_animal,0.3212,5.8855,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.16.jpeg,cat,15,0.3601,289.76,160.79,423.05,334.69,False,,False,has_animal,0.3212,5.8855,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.17 (1).jpeg,blank,-1,0.0,0.0,0.0,0.0,0.0,False,,False,no_animal_detection,0.2727,20.7203,0.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.18 (1).jpeg,train,6,0.3353,22.1,80.98,202.5,188.29,False,,False,no_animal_detection,0.0484,3.6683,0.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.18 (2).jpeg,person,0,0.5653,77.21,27.69,200.96,215.02,False,,False,no_animal_detection,0.0761,5.5551,0.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.18 (2).jpeg,umbrella,25,0.338,100.97,23.39,167.84,45.42,False,,False,no_animal_detection,0.0761,5.5551,0.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.18.jpeg,cow,19,0.6472,112.42,52.16,234.16,125.16,False,,False,has_animal,0.1743,8.5829,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.19 (1).jpeg,cat,15,0.8522,31.93,249.72,204.19,471.1,False,,False,has_animal,0.2408,7.9812,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-30 at 23.58.19.jpeg,blank,-1,0.0,0.0,0.0,0.0,0.0,False,,False,no_animal_detection,0.3305,11.5924,0.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.51 (1).jpeg,dog,16,0.835,59.15,38.27,509.69,301.43,False,,False,has_animal,0.1751,2.5969,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.51.jpeg,bear,21,0.5894,142.3,148.66,314.41,574.04,False,,False,has_animal,0.1521,4.3609,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.52 (1).jpeg,dog,16,0.5818,118.21,19.78,304.15,239.18,False,,False,has_animal,0.1892,11.1849,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.52 (1).jpeg,bear,21,0.4974,118.61,19.11,298.98,238.94,False,,False,has_animal,0.1892,11.1849,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.52 (2).jpeg,sheep,18,0.7826,38.61,78.19,383.0,656.97,False,,False,has_animal,0.1013,2.8532,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.52.jpeg,bear,21,0.6774,24.2,3.9,190.96,209.63,False,,False,has_animal,0.2684,6.3366,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.53 (1).jpeg,bear,21,0.4762,46.34,92.3,175.35,207.96,False,,False,has_animal,0.1918,9.2698,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.53 (1).jpeg,dog,16,0.4425,46.19,92.35,176.06,208.5,False,,False,has_animal,0.1918,9.2698,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.53.jpeg,cat,15,0.6842,7.64,65.1,482.49,405.61,False,,False,has_animal,0.112,3.5873,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/WhatsApp Image 2026-10-31 at 00.00.54.jpeg,cow,19,0.8159,84.02,36.77,597.09,436.63,False,,False,has_animal,0.1419,10.396,1.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/coyote_nursing2.webp,dog,16,0.3383,209.48,156.67,426.51,254.46,False,,False,has_animal,0.1306,8.9395,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/coyote_nursing2.webp,cow,19,0.3329,209.81,156.95,425.92,254.35,False,,False,has_animal,0.1306,8.9395,2.0,/Users/shahzaib/HFT26-TEAM-61/demo_images
+demo_images/kSypnEcgN5N5noc7dGKimU-1280-80.webp,blank,-1,0.0,0.0,0.0,0.0,0.0,False,,False,no_animal_detection,0.216,8.5911,0.0,/Users/shahzaib/HFT26-TEAM-61/demo_images

@@ -1,89 +1,50 @@
-# 🚀 CBIT Hacktoberfest '26 — Project Starter Repository
+# 🐾 PrismTech Wildlife Monitor - AI Camera-Trap Analytics
 
-> **Official Public Starter Repository for CBIT Hacktoberfest '26**  
-> *Chaitanya Bharathi Institute of Technology (CBIT), Hyderabad*
+**Team PrismTech** | AI-powered camera-trap analytics system designed to save researchers from manually reviewing thousands of images.
 
----
+## 📖 Solution Overview
+Camera traps generate massive amounts of data, but 60–80% of images are "blanks" (wind, grass, heat), and a single animal often triggers 10+ burst frames. 
 
-## 📋 Team Information
+Instead of just a basic object detector, our system acts as a complete **Analytics Workflow**:
+- Runs YOLOv8n for animal detection.
+- **Blank Triage:** Uses OpenCV heuristics (edge density + variance) to filter out empty images before human review.
+- **Event Grouping:** Groups burst frames into unique "events" so researchers count animals, not photos.
+- **Uncertainty Alerts:** Flags low-confidence or conflicting predictions.
+- **Human-in-the-Loop:** A dedicated Review Queue where users can Confirm or Reject flagged detections, saving corrections back to the CSV.
 
-| Attribute | Details |
-| :--- | :--- |
-| **Team Name** | **PrismTech** |
-| **Team Number** | `TEAM-61` (`HFT26-TEAM-61`) |
-| **Registration ID** | `HFEST26-RZPEE24C` |
-| **Problem Track** | **Track Selection in Progress** |
-| **Domain** | `General Track` |
-| **Team Leader** | Rida fatima (zoyaf534@gmail.com) |
-| **Institution** | Lords institute of engineering and technology |
+## 🚀 Key Differentiators
+1. **Analytics Tab:** Calculates "Review Time Saved" by filtering blanks.
+2. **Detections Tab:** Interactive data table with confidence sliders and CSV export.
+3. **Review Queue:** Routes low-confidence predictions (0.15–0.50) and conflicting classes to a human reviewer.
+4. **Alerts Tab:** Highlights uncertain detections with visual thumbnails.
 
-### 👥 Team Members
+## 🛠 Architecture & Tech Stack
+- **Frontend:** Streamlit (4 tabs: Analytics, Detections, Review Queue, Alerts)
+- **Detection:** YOLOv8n (Ultralytics, pretrained)
+- **Data Processing:** Pandas, OpenCV (for blank triage)
+- **Language:** Python
 
-| # | Name | Email | Institution |
-| :--- | :--- | :--- | :--- |
-| 1 | Mohammad fazeel | mfazeel0095@gmail.com | Lords institute of engineering and technology |
-| 2 | Afreen fatima | 4freenn@gmail.com | Lords institute of engineering and technology |
-| 3 | Mohammad shahzaib khan | mdzaibkhan12@gmail.com | Lords institute of engineering and technology |
-| 4 | Shoaib khan | khawjafazal001@gmail.com | Lords institute of engineering and technology |
-
----
-
-## 🎯 Problem Statement
-
-### **Track Selection in Progress**
-*Domain:* **General Track**
-
-Details regarding the chosen problem statement track and technical requirements.
-
----
-
-## 🛠️ Contribution & Submission Workflow
-
-All teams must follow the official fork-and-pull-request workflow:
-
-1. **Fork this Repository**:
-   - One team member should click the **Fork** button at the top right to fork this upstream repository to your personal/team GitHub account.
-2. **Add Collaborators**:
-   - In your forked repository, navigate to **Settings > Collaborators** and invite all your registered team members.
-3. **Clone & Develop Locally**:
+## 💻 Setup Instructions
+1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/HFT26-TEAM-61.git
+   git clone https://github.com/cbitosc/HFT26-TEAM-61
    cd HFT26-TEAM-61
-   git checkout -b feature/prototype
-   ```
-4. **Commit & Push Regularly**:
-   - Make atomic, descriptive commits throughout the hackathon.
-   ```bash
-   git add .
-   git commit -m "feat: implement core solution architecture"
-   git push origin feature/prototype
-   ```
-5. **Open Pull Request (PR) for Final Submission**:
-   - When ready for evaluation, open a **Pull Request** from your fork's `main` branch back to this upstream repository's `main` branch.
-   - **PR Title Format**: `[SUBMISSION] TEAM-61 - PrismTech - Track Selection in Progress`
-   - **PR Description Checklist**:
-     - 📌 Solution Overview & Approach
-     - 🏗️ Architecture & Tech Stack Details
-     - 🚀 Local Setup & Installation Instructions
-     - 🎥 Demo Video Link / Live Deployment URL
-     - 📸 Key Screenshots & Visuals
 
----
+## 🎥 Demo Video
+ https://drive.google.com/file/d/1onos3VTbAJm-jV3x7SusEGawjLUKxQAj/view?usp=drive_link
 
-## 📁 Recommended Project Structure
+## 📸 Screenshots
+<img width="1467" height="835" alt="Screenshot 2026-10-31 at 1 53 35 PM" src="https://github.com/user-attachments/assets/b612f119-16ac-4560-9968-160b758bff0d" />
+<img width="1468" height="823" alt="Screenshot 2026-10-31 at 1 53 20 PM" src="https://github.com/user-attachments/assets/3c11e73c-e45d-46ed-b620-2a7f1797bc31" />
+<img width="1450" height="709" alt="Screenshot 2026-10-31 at 1 52 55 PM" src="https://github.com/user-attachments/assets/6fe6d6be-ed0f-4129-a55a-2bf8b1d09ddd" />
+<img width="1428" height="714" alt="Screenshot 2026-10-31 at 1 52 41 PM" src="https://github.com/user-attachments/assets/aff2ab8a-c3ba-4704-8095-53435f74cc57" />
+<img width="1451" height="354" alt="Screenshot 2026-10-31 at 1 52 28 PM" src="https://github.com/user-attachments/assets/753f0953-59d0-4587-9061-aebfc6dddfe4" />
+<img width="1466" height="821" alt="Screenshot 2026-10-31 at 1 52 16 PM" src="https://github.com/user-attachments/assets/2ae03e6a-11fc-4ca7-8fd2-4a552fbb3def" />
+<img width="1466" height="835" alt="Screenshot 2026-10-31 at 1 51 51 PM" src="https://github.com/user-attachments/assets/117a3a0c-4ea3-4b39-a1dc-6a8dbfeba4cb" />
 
-```
-.
-├── src/                  # Source code (Frontend / Backend / ML)
-├── docs/                 # Documentation, architecture diagrams, slides
-├── tests/                # Test suites & verification scripts
-├── README.md             # Your project documentation & presentation
-└── LICENSE               # Open-source license (MIT recommended)
-```
 
----
 
-## ⚠️ Important Rules & Code of Conduct
-* **Upstream Protection**: Do not push directly to this repository's main branch. All evaluation will be conducted on your submitted Pull Request.
-* **Original Work**: All code submitted must be developed during the hackathon timeline. Open-source libraries and frameworks are welcomed with proper attribution.
-* **Code Freeze**: Final Pull Requests must be submitted before the designated hackathon submission deadline.
+
+
+
+
