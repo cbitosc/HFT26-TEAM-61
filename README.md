@@ -17,7 +17,7 @@ A Streamlit dashboard that detects objects in images and live camera feed using 
 5. streamlit run src/app.py
 
 ### Demo Video
-
+https://drive.google.com/file/d/1sICrx3K1b1h9waxJU3gnUKoRTKqSpHQN/view?usp=drive_link
 
 ### Screenshots
 <img width="1469" height="839" alt="Screenshot 2026-10-31 at 9 57 41 AM" src="https://github.com/user-attachments/assets/3209da26-a505-4b76-aa46-73a5cf9dbb4e" />
