@@ -29,3 +29,22 @@ Instead of just a basic object detector, our system acts as a complete **Analyti
    ```bash
    git clone https://github.com/cbitosc/HFT26-TEAM-61
    cd HFT26-TEAM-61
+
+## 🎥 Demo Video
+ https://drive.google.com/file/d/1onos3VTbAJm-jV3x7SusEGawjLUKxQAj/view?usp=drive_link
+
+## 📸 Screenshots
+<img width="1467" height="835" alt="Screenshot 2026-10-31 at 1 53 35 PM" src="https://github.com/user-attachments/assets/b612f119-16ac-4560-9968-160b758bff0d" />
+<img width="1468" height="823" alt="Screenshot 2026-10-31 at 1 53 20 PM" src="https://github.com/user-attachments/assets/3c11e73c-e45d-46ed-b620-2a7f1797bc31" />
+<img width="1450" height="709" alt="Screenshot 2026-10-31 at 1 52 55 PM" src="https://github.com/user-attachments/assets/6fe6d6be-ed0f-4129-a55a-2bf8b1d09ddd" />
+<img width="1428" height="714" alt="Screenshot 2026-10-31 at 1 52 41 PM" src="https://github.com/user-attachments/assets/aff2ab8a-c3ba-4704-8095-53435f74cc57" />
+<img width="1451" height="354" alt="Screenshot 2026-10-31 at 1 52 28 PM" src="https://github.com/user-attachments/assets/753f0953-59d0-4587-9061-aebfc6dddfe4" />
+<img width="1466" height="821" alt="Screenshot 2026-10-31 at 1 52 16 PM" src="https://github.com/user-attachments/assets/2ae03e6a-11fc-4ca7-8fd2-4a552fbb3def" />
+<img width="1466" height="835" alt="Screenshot 2026-10-31 at 1 51 51 PM" src="https://github.com/user-attachments/assets/117a3a0c-4ea3-4b39-a1dc-6a8dbfeba4cb" />
+
+
+
+
+
+
+
