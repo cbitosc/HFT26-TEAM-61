@@ -1,29 +1,31 @@
-## 🔍 PrismTech - AI Object Detection Dashboard
+# 🐾 PrismTech Wildlife Monitor - AI Camera-Trap Analytics
 
-### Solution Overview
-A Streamlit dashboard that detects objects in images and live camera feed using YOLOv8. It shows detections in a table and charts, with a camera filter and a Live AI Detection mode.
+**Team PrismTech** | AI-powered camera-trap analytics system designed to save researchers from manually reviewing thousands of images.
 
-### Architecture & Tech Stack
-- Frontend: Streamlit
-- Detection: YOLOv8 (Ultralytics)
-- Language: Python
-- Features: Dashboard, camera filter, chart, table, Live AI Detection
+## 📖 Solution Overview
+Camera traps generate massive amounts of data, but 60–80% of images are "blanks" (wind, grass, heat), and a single animal often triggers 10+ burst frames. 
 
-### Setup Instructions
-1. git clone https://github.com/cbitosc/HFT26-TEAM-61
-2. cd HFT26-TEAM-61
-3. python -m venv .venv && source .venv/bin/activate
-4. pip install -r requirements.txt
-5. streamlit run src/app.py
+Instead of just a basic object detector, our system acts as a complete **Analytics Workflow**:
+- Runs YOLOv8n for animal detection.
+- **Blank Triage:** Uses OpenCV heuristics (edge density + variance) to filter out empty images before human review.
+- **Event Grouping:** Groups burst frames into unique "events" so researchers count animals, not photos.
+- **Uncertainty Alerts:** Flags low-confidence or conflicting predictions.
+- **Human-in-the-Loop:** A dedicated Review Queue where users can Confirm or Reject flagged detections, saving corrections back to the CSV.
 
-### Demo Video
-https://drive.google.com/file/d/1sICrx3K1b1h9waxJU3gnUKoRTKqSpHQN/view?usp=drive_link
+## 🚀 Key Differentiators
+1. **Analytics Tab:** Calculates "Review Time Saved" by filtering blanks.
+2. **Detections Tab:** Interactive data table with confidence sliders and CSV export.
+3. **Review Queue:** Routes low-confidence predictions (0.15–0.50) and conflicting classes to a human reviewer.
+4. **Alerts Tab:** Highlights uncertain detections with visual thumbnails.
 
-### Screenshots
-<img width="1469" height="839" alt="Screenshot 2026-10-31 at 9 57 41 AM" src="https://github.com/user-attachments/assets/3209da26-a505-4b76-aa46-73a5cf9dbb4e" />
-<img width="1468" height="829" alt="Screenshot 2026-10-31 at 9 57 25 AM" src="https://github.com/user-attachments/assets/c48241ec-8cbb-404a-80c9-81f168c04903" />
-<img width="1035" height="410" alt="Screenshot 2026-10-31 at 9 57 02 AM" src="https://github.com/user-attachments/assets/572bd968-b1e8-406f-b269-e0422b5b8923" />
-<img width="328" height="537" alt="Screenshot 2026-10-31 at 9 56 45 AM" src="https://github.com/user-attachments/assets/faf67dfa-cb30-42e6-8b17-6a9bcd851d4b" />
-<img width="1108" height="514" alt="Screenshot 2026-10-31 at 9 57 53 AM" src="https://github.com/user-attachments/assets/9ed0e406-9737-469e-b420-da250edcc1ec" />
-<img width="841" height="805" alt="Screenshot 2026-10-31 at 10 01 13 AM" src="https://github.com/user-attachments/assets/a77ced30-67da-4eee-9f35-2d208467422d" />
+## 🛠 Architecture & Tech Stack
+- **Frontend:** Streamlit (4 tabs: Analytics, Detections, Review Queue, Alerts)
+- **Detection:** YOLOv8n (Ultralytics, pretrained)
+- **Data Processing:** Pandas, OpenCV (for blank triage)
+- **Language:** Python
 
+## 💻 Setup Instructions
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/cbitosc/HFT26-TEAM-61
+   cd HFT26-TEAM-61
